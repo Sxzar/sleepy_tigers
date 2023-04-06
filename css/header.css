@@ -126,7 +126,7 @@
 /*---------------------------------------Hero container ---------------------------------------*/
 
 .hero-image{
-    background-image: linear-gradient(rgba(230, 230, 231, 0.2), rgba(6, 31, 13, 0.8)),url(assets\img\forest2.jpg);
+    background-image: linear-gradient(rgba(230, 230, 231, 0.2), rgba(6, 31, 13, 0.8)),url(../assets/img/forest2.jpg);
     height:500px;
     background-position: center;
     background-repeat: no-repeat;
