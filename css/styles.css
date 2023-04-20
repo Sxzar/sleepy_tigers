@@ -1,156 +1,37 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-
-}
-
-
-/*---------------------------------------Navbar container---------------------------------------*/
-
-.container {
-    background-color: #000000;
-    height: 60px;
-    width:100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-between;
-    padding-left:10px;
-}
-
-/*---------------------------------------Logo ---------------------------------------*/
-
-.logo a{
-    position: relative;
-    bottom:5px;
-    text-decoration: none;
-    /* text has not the link style (underline) */
-    color:#ffffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: lighter;
-    font-style:italic;
-    font-size: 25px;
-    transition: font-size 1s;
-}
-
-.logo a:hover{
-    color:rgb(28, 76, 222);
-    font-size:30px;
- 
-}
-
-/*---------------------------------------Navbar elements ---------------------------------------*/
-
-.container ul{
-    /* no bullets for list  */
-    list-style-type: none;
-    /* align the elements with flexbox */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-between;
-    background-color: rgb(0, 0, 0);
-}
-
-.container ul li:hover{
-    cursor: pointer;
-    /* make the cursor pointer when you hover the li element */
-}
-
-.container ul li{
-    padding: 10px 30px;
-    position: relative;
-}
-
-.container ul li a{
-    color:#ffffff;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.container ul li a:hover{
-    color:rgb(28, 76, 222);
-}
-
-/*---------------------------------------Dropdown---------------------------------------*/
-
-.dropdown {
-    /* display:none not allow to display the dropdown yet */
-    display: none;
-    z-index: 1;
-    /* z-index in order to appear over the hero image and the navbar image */
-}
-
-.container ul li:hover .dropdown{
-    display: block;
-    position: absolute;
-    left:0;
-    top:100%;
-    background-color:#000000;
-}
-
-.dropdown ul {
-    padding: 10px;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content:center;
-}
-
-.dropdown ul li{
-    width:100px;
-    text-align: center;
-}
-
-.dropdown ul li a{
-    position: relative;
-    right:9px;
-    width:100px;
-    text-align: center;
-} 
-
-.dropdown ul li a:hover{
-    color:rgb(28, 76, 222);
-}
-
-.fa{
-    float:right;
-    margin-left:5px;
-    margin-top: 4px;;
-    color: #ffffff;
-    font-size: large;
-}
-
 /* ---------------------------Forest Ecosystem----------------- */
 
-.ecosystem{
+.ecosystem {
     margin: 40px;
     /* margin to the entire body page */
 }
 
 .about {
-    background-image:linear-gradient(rgba(1, 0, 0, 0.8), rgba(214, 214, 214, 0.1)), url(../assets/img/background3.jpg);
+    background-image: linear-gradient(
+            rgba(1, 0, 0, 0.8),
+            rgba(214, 214, 214, 0.1)
+        ),
+        url(../assets/img/background3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 0 8px 8px white inset;
     background-position: 40% 60%;
     /* how much the image is positioned up or down */
-    display:flex;
+    display: flex;
     flex-direction: row;
     min-height: 600px;
     /* container height can be adjusted after the content inside, so it can be boosted if the content is bigger than the min-height dimension */
-    width:100%;
-    justify-content:flex-start;
+    width: 100%;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.text{
-    width:50%;
+.text {
+    width: 50%;
     padding: 30px;
 }
 
-.about h1, h2{
+.about h1,
+h2 {
     color: #ffffff;
     text-align: center;
 }
@@ -159,55 +40,54 @@ hr {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
-.about p{
+.about p {
     text-indent: 20px;
     color: #ffffff;
     text-align: justify;
 }
 
-.forest-images{
-   position: relative;
-   top:30px;
-    display:grid;
-    grid-template-columns: 1 fr ;
+.forest-images {
+    position: relative;
+    top: 30px;
+    display: grid;
+    grid-template-columns: 1 fr;
     flex-direction: row;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     padding: 20px;
     margin: 20px;
 }
 
-.forest-images img{
-    
-    height:200px;
+.forest-images img {
+    height: 200px;
     width: 300px;
     border: 2px solid #ffffff;
 }
 
-.tropical{
+.tropical {
     position: relative;
-    top:50px;
-    z-index:1;
+    top: 50px;
+    z-index: 1;
     /* element with lower stack order is behind an element with a bigger stack order*/
 }
 
-.temperate{
+.temperate {
     position: relative;
-    bottom:30px;
-    left:200px;
-    z-index:2;
+    bottom: 30px;
+    left: 200px;
+    z-index: 2;
     /* the element has a greater stack order so is always in front of an element with a lower stack order*/
 }
 
-.boreal{
+.boreal {
     position: relative;
-    bottom:90px;
-    z-index:1;
+    bottom: 90px;
+    z-index: 1;
 }
 
-.types{
+.types {
     margin: 40px;
     display: flex;
     flex-direction: column;
@@ -215,7 +95,7 @@ hr {
     align-items: center;
 }
 
-#special{
+#special {
     padding: 20px;
     font-size: 40px;
     font-style: italic;
@@ -223,18 +103,17 @@ hr {
     color: #0a7f25;
 }
 
-.fa-solid{
+.fa-solid {
     color: #0a7f25;
 }
 
-.types p{
-
+.types p {
     text-indent: 20px;
     text-align: justify;
-    font-size:15px;
+    font-size: 15px;
 }
 
-.types-forest{
+.types-forest {
     margin: 40px;
     display: flex;
     flex-direction: column;
@@ -245,17 +124,16 @@ hr {
     color: rgb(0, 0, 0);
 }
 
-.trop:nth-child(odd){
+.trop:nth-child(odd) {
     /* the children element from odd position is changed in reverse mode. */
 
-  
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
 }
 
-.trop{
+.trop {
     margin: 10px;
     display: block;
     display: flex;
@@ -264,38 +142,38 @@ hr {
     align-items: center;
 }
 
-.trop img{
-    float:left;
+.trop img {
+    float: left;
     height: 200px;
     width: 300px;
-    border:2px solid #000000;
+    border: 2px solid #000000;
     margin: 10px;
 }
 
-.biom-text{
+.biom-text {
     text-align: justify;
     text-indent: 20px;
 }
 
-.title-type{
+.title-type {
     padding: 20px;
     font-size: 30px;
     font-style: italic;
     text-align: center;
-    color:#0a7f25;
+    color: #0a7f25;
     font-weight: bold;
 }
 
-.list-trees{
+.list-trees {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: self-start;
-    margin:30px;
+    margin: 30px;
     padding: 20px;
 }
 
-.sametitle{
+.sametitle {
     padding: 20px;
     font-size: 30px;
     font-style: italic;
@@ -303,34 +181,34 @@ hr {
     color: #0a7f25;
 }
 
-.list-trees ul li{
+.list-trees ul li {
     list-style-type: none;
 }
 
-.list-trees ul li a{
+.list-trees ul li a {
     text-decoration: none;
     color: #000000;
 }
 
-.list-trees ul li a:hover{
-    color:rgba(14, 16, 117, 0.83) 
+.list-trees ul li a:hover {
+    color: rgba(14, 16, 117, 0.83);
 }
 
-.functions{
-    width:300px;
-    min-height:300px;
+.functions {
+    width: 300px;
+    min-height: 300px;
     padding: 10px;
-    box-shadow:0px 0px 28px #0000ff;
+    box-shadow: 0px 0px 28px #0000ff;
     background-color: #ffffff;
     border-radius: 10%;
 }
 
-.fa-regular{
+.fa-regular {
     color: #61efff;
 }
 
-#my-pie-chart-container{
-    display:flex;
+#my-pie-chart-container {
+    display: flex;
     flex-wrap: wrap;
     /* layout depends on the element's size and the flex-wrap property put the elements how it considers */
     flex-direction: column;
@@ -339,32 +217,39 @@ hr {
 
     margin: 40px;
     padding: 10px;
-
-
 }
-.status-trends{
+.status-trends {
     text-indent: 20px;
     text-align: justify;
-    order:-1;
+    order: -1;
     /* elements with order property lower is on the first position in container */
 }
 
 #my-pie-chart {
-    
-    margin:10px;
-    float:left;
-    background: conic-gradient( rgb(7, 98, 7) 0% 20% , rgb(169, 149, 33) 20% 32%,rgb(148, 142, 142) 32% 41%, rgb(208, 63, 10) 41% 49%, rgb(3, 40, 3) 49% 54%,  #10aa34 54% 57%, #67fc89 57% 59%,  #4c0c0c 59%  61%,  #27cddf 61% 63%, #614040 63% 65%, #232e93 65% 67%); 
+    margin: 10px;
+    float: left;
+    background: conic-gradient(
+        rgb(7, 98, 7) 0% 20%,
+        rgb(169, 149, 33) 20% 32%,
+        rgb(148, 142, 142) 32% 41%,
+        rgb(208, 63, 10) 41% 49%,
+        rgb(3, 40, 3) 49% 54%,
+        #10aa34 54% 57%,
+        #67fc89 57% 59%,
+        #4c0c0c 59% 61%,
+        #27cddf 61% 63%,
+        #614040 63% 65%,
+        #232e93 65% 67%
+    );
     border-radius: 50%;
     width: 200px;
     height: 200px;
 }
- #title-pie p{
+#title-pie p {
     margin: 10px;
     text-align: center;
-
- }
-  #legenda {
-    
+}
+#legenda {
     margin-left: 20px;
     padding-left: 20px;
     display: grid;
@@ -372,200 +257,191 @@ hr {
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
     margin-bottom: 10px;
-    border:2px solid #0a7f25;
- 
-  }
-  .entry{
+    border: 2px solid #0a7f25;
+}
+.entry {
     padding: 5px;
     font-size: 10px;
     display: flex;
     align-items: center;
-  }
+}
 
-.entry-color{
+.entry-color {
     height: 10px;
-    width:10px;
+    width: 10px;
     /* create div element which look like a square with 10x10 and indicate the color from pie-chart */
 }
-.entry-text{
+.entry-text {
     margin-left: 5px;
 }
-#color-green-3{
+#color-green-3 {
     background-color: rgb(7, 98, 7);
 }
-#color-yellow{
+#color-yellow {
     background-color: rgb(169, 149, 33);
 }
-#color-grey{
+#color-grey {
     background-color: rgb(148, 142, 142);
 }
-#color-orange{
+#color-orange {
     background-color: rgb(208, 63, 10);
 }
-#color-green-4{
+#color-green-4 {
     background-color: rgb(3, 40, 3);
 }
-#color-green-2{
+#color-green-2 {
     background-color: #10aa34;
 }
-#color-green-1{
+#color-green-1 {
     background-color: #67fc89;
 }
-#color-bordo{
+#color-bordo {
     background-color: #4c0c0c;
 }
-#color-baby-blue{
+#color-baby-blue {
     background-color: #27cddf;
 }
-#color-brown{
+#color-brown {
     background-color: #614040;
 }
-#color-blue-marine{
+#color-blue-marine {
     background-color: #232e93;
 }
 
 /* ------------------------- Articles ----------------------- */
-.container-articles{
+.container-articles {
     display: flex;
     flex-direction: row;
     /* put the containers "article" one by one in a single row */
-    margin:40px;
-    align-items:flex-start;
+    margin: 40px;
+    align-items: flex-start;
     justify-content: space-around;
     padding: 10px;
     /* border: 2px solid #4c0c0c; */
-
 }
-.article img{
+.article img {
     position: relative;
-    height:300px;
-    width:100%;
-
+    height: 300px;
+    width: 100%;
 }
-.article{
+.article {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
     background-color: #d2dae2;
-    margin-left:10px;
-    margin-right:10px;
-    width:400px;
-    height:600px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 400px;
+    height: 600px;
     text-align: center;
     border: 2px solid black;
 }
-.article p{
+.article p {
     text-align: center;
     text-indent: 20px;
     font-style: italic;
 }
 .button {
-    background-color:#0a0a23;
+    background-color: #0a0a23;
     color: #fff;
-    border:none; 
-    border-radius:30px; 
-    padding:15px;
-    margin:10px;
-    min-height:30px; 
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 10px;
+    min-height: 30px;
     min-width: 120px;
 }
 .button:hover {
-    background-color:#0000ff;
+    background-color: #0000ff;
     transition: 1s;
 }
-.button a{
-    border:none; 
+.button a {
+    border: none;
     text-decoration: none;
-    color:#ffffff;
+    color: #ffffff;
 }
-.button a:hover{
+.button a:hover {
     font-size: 18px;
 }
 .article-title {
     text-align: center;
     color: #000000;
-    text-shadow:  0px -6px 10px #0000ff;
+    text-shadow: 0px -6px 10px #0000ff;
     /* X axes and Y axes, values specify the shadow's distance from the text. If the number is with minus, the shadow appears to the left from the text */
     /* on Y axes, if the value is with+, the shadow appears over the text, otherwise under the text */
     font-weight: bold;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
 }
 /* -----------------Gallery animal photos ----------------- */
-.animals-dissapear{
-    margin:20px 40px;
+.animals-dissapear {
+    margin: 20px 40px;
     padding: 5px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    
-
 }
 
-
-.description-animal-title{
-
+.description-animal-title {
     padding: 10px;
     text-align: center;
     font-size: 20px;
     color: #000000;
-    text-shadow:  0px -6px 10px #0000ff;
+    text-shadow: 0px -6px 10px #0000ff;
     font-weight: bold;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
 }
-.description-animal p{
+.description-animal p {
     padding: 10px;
 }
-.description-animal{
-   
+.description-animal {
     text-align: justify;
     text-indent: 20px;
 }
-hr.style-line{
+hr.style-line {
     border: 2px solid #0000ff;
 }
 
-
-
-.image-animals{
+.image-animals {
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 40px;
     padding: 50px;
     row-gap: 20px;
-    height:600px;
+    height: 600px;
     /* put the elements on rows with 3 elements per row with a space-between them 10px*/
 }
-.gallery-foto{
-    
+.gallery-foto {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.gallery-foto img{
-    height:250px;
-    width:350px;
+.gallery-foto img {
+    height: 250px;
+    width: 350px;
     position: absolute;
-    filter:grayscale(100%);
+    filter: grayscale(100%);
     /* make the images in greyscale */
     transition: filter 1s;
     border: 2px solid black;
 }
-
-
 
 /* .gallery-foto img:hover{
     cursor: pointer;
     filter:none;
     
 } */
-.image__overlay{
-    position:absolute;
+.image__overlay {
+    position: absolute;
     padding: 5px;
-    height:250px;
-    width:350px;
+    height: 250px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -574,26 +450,23 @@ hr.style-line{
     opacity: 0;
     transition: visibility 0s, opacity 0.5s;
 }
-.image__title{
+.image__title {
     padding: 5px;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-    color:#e30000;
+    color: #e30000;
 }
 .image__descript p {
-    text-align: justify ;
+    text-align: justify;
     text-indent: 20px;
-    color:rgb(255, 255, 255);
-   
-
+    color: rgb(255, 255, 255);
 }
-.gallery-foto:hover img{
+.gallery-foto:hover img {
     cursor: pointer;
-    filter:grayscale(0%);
-
+    filter: grayscale(0%);
 }
 .gallery-foto:hover .image__overlay {
     visibility: visible;
     opacity: 1;
-  }
+}

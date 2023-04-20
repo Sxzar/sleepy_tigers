@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* include margins and paddings in layout */
+}
+
+/*---------------------------------------Navbar container---------------------------------------*/
+
+.container {
+    background-color: #000000;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+/*---------------------------------------Logo ---------------------------------------*/
+
+.logo a {
+    position: relative;
+    bottom: 5px;
+    text-decoration: none;
+    /* text has not the link style (underline) */
+    color: #ffffff;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 25px;
+    transition: font-size 1s;
+}
+
+.logo a:hover {
+    color: rgb(247, 140, 18);
+    font-size: 30px;
+}
+
+/*---------------------------------------Navbar elements ---------------------------------------*/
+
+.container ul {
+    /* no bullets for list  */
+    list-style-type: none;
+    /* align the elements with flexbox */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+}
+
+.container ul li:hover {
+    cursor: pointer;
+    /* make the cursor pointer when you hover the li element */
+}
+
+.container ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.container ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.container ul li a:hover {
+    color: rgb(247, 140, 18);
+}
+
+/*---------------------------------------Dropdown---------------------------------------*/
+
+.dropdown {
+    /* display:none not allow to display the dropdown yet */
+    display: none;
+    z-index: 1;
+    /* z-index in order to appear over the hero image and the navbar image */
+}
+
+.container ul li:hover .dropdown {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #000000;
+}
+
+.dropdown ul {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown ul li {
+    width: 100px;
+    text-align: center;
+}
+.dropdown ul li a {
+    position: relative;
+    right: 9px;
+    width: 100px;
+    text-align: center;
+}
+.dropdown ul li a:hover {
+    color: rgb(247, 140, 18);
+}
+
+.fa {
+    float: right;
+    margin-left: 5px;
+    margin-top: 4px;
+    color: #ffffff;
+    font-size: large;
+}
+
+/*---------------------------------------Hero container ---------------------------------------*/
+
+.hero-image {
+    background-image: linear-gradient(
+            rgba(230, 230, 231, 0.2),
+            rgba(6, 31, 13, 0.8)
+        ),
+        url(../assets/img/forest2.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30% 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.hero-text {
+    color: rgb(255, 255, 255);
+}
+
+.hero-text h1 {
+    text-align: center;
+    font-size: 50px;
+}
+.hero-text p {
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*---------------------------------------Search box ---------------------------------------*/
+/*  */
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 100px;
+}
+form {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 45px;
+    background-color: #ffffff;
+    border-radius: 100px;
+}
+input {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: none;
+    font-size: 20px;
+    border-radius: 100px;
+}
+button {
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+    background: none;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+.search .fa {
+    color: #000000;
+    margin: 10px;
+}
+.search .fa:hover {
+    color: rgb(46, 85, 242);
+}
