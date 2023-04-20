@@ -1,4 +1,4 @@
-body{
+/* body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: r119, 128, 134; 
   } 
@@ -99,7 +99,7 @@ body{
   }
   .myCard:hover{
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
-  }
+  } */
    footer{
     text-align: center;
     padding: 3px;
