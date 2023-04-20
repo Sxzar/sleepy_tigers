@@ -4,6 +4,7 @@
     box-sizing: border-box;
     /* include margins and paddings in layout */
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
 }
 
 /*---------------------------------------Logo ---------------------------------------*/
