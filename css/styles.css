@@ -174,10 +174,7 @@ button{
 
 /* ---------------------------Forest Ecosystem----------------- */
 
-.ecosystem{
-    margin: 40px;
-    /* margin to the entire body page */
-}
+ 
 
 .about {
     background-image:linear-gradient(rgba(1, 0, 0, 0.8), rgba(214, 214, 214, 0.1)), url(../assets/img/background3.jpg);
@@ -188,7 +185,8 @@ button{
     /* how much the image is positioned up or down */
     display:flex;
     flex-direction: row;
-    min-height: 600px;
+    
+    height:auto;
     /* container height can be adjusted after the content inside, so it can be boosted if the content is bigger than the min-height dimension */
     width:100%;
     justify-content:flex-start;
@@ -228,7 +226,9 @@ hr {
     padding: 20px;
     margin: 20px;
 }
-
+iframe{
+    margin-top: 20px;
+}
 .forest-images img{
     
     height:200px;
@@ -589,13 +589,16 @@ hr.style-line{
     height:600px;
     /* put the elements on rows with 3 elements per row with a space-between them 10px*/
 }
-.gallery-foto{
+ .gallery-foto{
     
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+    height:250px;
+    width:400px;
+    
+} 
 .gallery-foto img{
     height:250px;
     width:350px;
@@ -649,3 +652,162 @@ hr.style-line{
     visibility: visible;
     opacity: 1;
   }
+  @media only screen and (max-width: 1400px) {
+    .image-animals{
+        display: grid;
+        grid-template-columns:  1fr 1fr ;
+        margin: 40px;
+        padding: 50px;
+        row-gap: 20px;
+        column-gap: 20px;
+        height:900px;
+        
+        /* put the elements on rows with 3 elements per row with a space-between them 10px*/
+    }
+    .gallery-foto{
+    
+        position: relative;
+        display: grid;
+       grid-template-columns: 1fr 1fr;
+        height:250px;
+        width:350px;
+       
+    } 
+    .gallery-foto img{
+        height:250px;
+        width:350px;
+        position: absolute;
+        filter:grayscale(100%);
+        /* make the images in greyscale */
+        transition: filter 1s;
+        border: 2px solid black;
+    }
+    
+}
+
+@media only screen and (max-width: 800px) {
+    .image-animals{
+        display: grid;
+        grid-template-columns:   1fr ;
+        margin: 40px;
+        padding: 50px;
+        row-gap: 20px;
+        column-gap: 20px;
+        height:900px;
+        
+        /* put the elements on rows with 3 elements per row with a space-between them 10px*/
+    }
+    .gallery-foto{
+    
+        position: relative;
+        display: grid;
+       grid-template-columns: 1fr;
+        height:250px;
+        width:350px;
+      
+    } 
+    .gallery-foto img{
+        height:250px;
+        width:350px;
+        position: absolute;
+        filter:grayscale(100%);
+        /* make the images in greyscale */
+        transition: filter 1s;
+        border: 2px solid black;
+    }
+    
+}
+@media only screen and (max-width: 1200px){
+    .about {
+        background-image:linear-gradient(rgba(1, 0, 0, 0.8), rgba(214, 214, 214, 0.1)), url(../assets/img/background3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0 0 8px 8px white inset;
+        background-position: 40% 60%;
+        /* how much the image is positioned up or down */
+        display:grid;
+        grid-template-rows: 1fr;
+        min-height: 600px;
+        /* container height can be adjusted after the content inside, so it can be boosted if the content is bigger than the min-height dimension */
+        width:100%;
+     
+    }
+    .text{
+        width:100%;
+        padding: 30px;
+    }
+}
+@media only screen and (max-width: 800px){
+    .about {
+        background-image:linear-gradient(rgba(1, 0, 0, 0.8), rgba(214, 214, 214, 0.1)), url(../assets/img/background3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0 0 8px 8px white inset;
+        background-position: 40% 60%;
+        /* how much the image is positioned up or down */
+        display:grid;
+        grid-template-rows: 1fr;
+       height: auto;
+        /* container height can be adjusted after the content inside, so it can be boosted if the content is bigger than the min-height dimension */
+        width:100%;
+     
+    }
+    .text{
+        width:100%;
+        padding: 30px;
+    }
+    .forest-images{
+        position: relative;
+         display:grid;
+         grid-template-rows: 1fr;
+         width:100%;
+        
+         padding: 20px;
+         margin: 20px;
+     }
+     .tropical{
+        position: relative;
+        top:0px;
+        z-index:1;
+        /* element with lower stack order is behind an element with a bigger stack order*/
+    }
+    
+    .temperate{
+        position: relative;
+        bottom:0px;
+        left:0px;
+        z-index:1;
+        /* the element has a greater stack order so is always in front of an element with a lower stack order*/
+    }
+    
+    .boreal{
+        position: relative;
+        bottom:0px;
+        z-index:1;
+    }
+   
+    
+    
+}
+@media only screen and (max-width: 1200px){
+
+    .list-trees{
+    display: grid;
+       grid-template-columns: 1fr 1fr;
+       row-gap: 20px;
+        margin:30px;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+
+    .list-trees{
+        display: grid;
+       grid-template-columns: 1fr;
+       row-gap: 20px;
+
+        margin:30px;
+        padding: 20px;
+    }
+}
