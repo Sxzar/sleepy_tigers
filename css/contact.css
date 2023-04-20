@@ -1,0 +1,49 @@
+.contact-section h2 {
+    color: #000;
+}
+.contact-form {
+    width: 50%;
+    margin: auto;
+}
+
+.fields {
+    display: flex;
+    flex-wrap: wrap;
+}
+.fields > div {
+    padding: 20px;
+}
+.fields > div:first-child,
+.fields > div:nth-child(2) {
+    width: 50%;
+}
+.fields > div:nth-child(3) {
+    width: 100%;
+}
+.fields input,
+.fields textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 10px;
+}
+.fields label {
+    font-weight: 700;
+    display: block;
+}
+.form-submit-button {
+    width: fit-content;
+    padding: 10px 30px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.submit-wrapper {
+    text-align: right;
+    padding: 20px;
+}

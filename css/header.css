@@ -160,7 +160,7 @@
     height: 50px;
     border-radius: 100px;
 }
-form {
+.search-form {
     display: flex;
     align-items: center;
     width: 350px;
@@ -168,7 +168,7 @@ form {
     background-color: #ffffff;
     border-radius: 100px;
 }
-input {
+.search input {
     margin: 10px;
     padding: 10px;
     border: none;
@@ -177,7 +177,7 @@ input {
     font-size: 20px;
     border-radius: 100px;
 }
-button {
+.search button {
     width: 44px;
     height: 44px;
     font-size: 20px;
