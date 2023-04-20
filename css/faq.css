@@ -1,0 +1,22 @@
+.faq-container {
+  background-color: rgba(39, 48, 52, 0.658);
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.question-container {
+  display: flex;
+  justify-content: space-around;
+}
+.question {
+  width: 20%;
+}
+
+.faq-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+svg {
+  margin-bottom: -24px;
+}
