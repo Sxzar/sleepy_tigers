@@ -1,0 +1,57 @@
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #000;
+    font-size: 20px;
+    color: #f9f9f9;
+}
+
+.footer-wrapper {
+    padding: 40px 0;
+}
+.fa-brands {
+    font-size: 50px;
+}
+.fa-instagram {
+    color: azure;
+}
+.fa-facebook {
+    color: azure;
+}
+.fa-linkedin {
+    color: azure;
+}
+.social {
+    color: rgb(243, 244, 244);
+    text-decoration: none;
+}
+
+.fa-twitter {
+    color: azure;
+}
+hr {
+    width: 80%;
+}
+.footer-wrapper .footer-container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.footer-wrapper .footer-container2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+.box i {
+    font-size: 24px;
+}
+
+.footer-wrapper .top-section,
+.footer-wrapper .bottom-section {
+    padding: 20px 0;
+}
+.copyright-info {
+    font-size: 20px;
+}
