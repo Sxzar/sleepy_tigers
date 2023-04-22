@@ -1,0 +1,93 @@
+.img-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.img-container > img {
+  width: 24%;
+}
+
+.img-container > img:hover {
+  -webkit-box-shadow: 1px 1px 14px 5px #0e0e0d;
+  box-shadow: 1px 1px 14px 5px #32322e;
+}
+
+.introduction-section {
+  padding: 3%;
+}
+
+.desert-title {
+  padding: 3%;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  letter-spacing: 3px;
+  word-spacing: -0.8px;
+  font-weight: normal;
+}
+
+p,
+.facts-section {
+  /* width: 50%; */
+  padding: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-align: justify;
+  word-spacing: 1px;
+}
+
+.first-section {
+  display: flex;
+  border: 1px solid #000000;
+}
+
+.first-section > p {
+  padding: 3%;
+}
+
+.first-section > img {
+  height: 100%;
+  width: 400px;
+  padding: 50px;
+}
+
+.desert-video {
+  text-align: center;
+  padding: 3%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 3%;
+}
+
+.facts-section > h2 {
+  text-align: center;
+  color: black;
+  padding: 2%;
+}
+
+ul li:hover {
+  font-style: oblique;
+  cursor: pointer;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 3%;
+}
+
+.bottom-container > img {
+  width: 19%;
+}
+
+.bottom-container > img:hover {
+  -webkit-box-shadow: 1px 1px 14px 5px #0e0e0d;
+  box-shadow: 1px 1px 14px 5px #32322e;
+}
+
+.material-symbols-outlined {
+  padding: 10px;
+}
