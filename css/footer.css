@@ -1,9 +1,12 @@
 footer {
+    position: relative;
     text-align: center;
     padding: 3px;
     background-color: #000;
     font-size: 20px;
     color: #f9f9f9;
+   bottom:0;
+   width:100%;
 }
 
 .footer-wrapper {

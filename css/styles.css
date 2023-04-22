@@ -5,6 +5,7 @@
     /* include margins and paddings in layout */
     font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
+
 }
 
 /*---------------------------------------Logo ---------------------------------------*/
@@ -41,6 +42,7 @@
 .menu_bar ul {
     list-style: none;
     display: flex;
+ 
 }
 .menu_bar ul li {
     padding: 10px 30px;
@@ -226,6 +228,8 @@ hr {
 }
 iframe {
     margin-top: 20px;
+    width:560px;
+    height:315px;
 }
 .forest-images img {
     height: 200px;
@@ -484,7 +488,7 @@ iframe {
     align-items: flex-start;
     justify-content: space-around;
     padding: 10px;
-    /* border: 2px solid #4c0c0c; */
+  
 }
 .article img {
     position: relative;
@@ -579,10 +583,12 @@ hr.style-line {
 .image-animals {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
     margin: 40px;
     padding: 50px;
-    row-gap: 20px;
-    height: 600px;
+    gap: 20px;
+
+   
     /* put the elements on rows with 3 elements per row with a space-between them 10px*/
 }
 .gallery-foto {
@@ -603,11 +609,7 @@ hr.style-line {
     border: 2px solid black;
 }
 
-/* .gallery-foto img:hover{
-    cursor: pointer;
-    filter:none;
-    
-} */
+
 .image__overlay {
     position: absolute;
     padding: 5px;
@@ -679,7 +681,9 @@ hr.style-line {
         padding: 50px;
         row-gap: 20px;
         column-gap: 20px;
-        height: 900px;
+        height: auto;
+        /* height: auto ,footer not to come in another position, in this way it stays fixed */
+        
 
         /* put the elements on rows with 3 elements per row with a space-between them 10px*/
     }
@@ -689,15 +693,6 @@ hr.style-line {
         grid-template-columns: 1fr;
         height: 250px;
         width: 350px;
-    }
-    .gallery-foto img {
-        height: 250px;
-        width: 350px;
-        position: absolute;
-        filter: grayscale(100%);
-        /* make the images in greyscale */
-        transition: filter 1s;
-        border: 2px solid black;
     }
 }
 @media only screen and (max-width: 1200px) {
@@ -794,4 +789,29 @@ hr.style-line {
         margin: 30px;
         padding: 20px;
     }
+}
+
+@media only screen and (max-width: 829px){
+    .article {
+        width: 200px;
+        height: 800px;
+     
+    }
+    .article img{
+        height:250px;
+
+    }
+}
+
+@media only screen and (max-width: 500px){
+    iframe{
+        width:350px;
+        height:250px;
+    }
+}
+@media only screen and (max-width: 500px){
+.menu_bar ul li {
+   display: flex;
+   flex-direction: column;
+}
 }
