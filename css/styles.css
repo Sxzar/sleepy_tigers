@@ -774,7 +774,7 @@ hr.style-line {
         padding: 50px;
         row-gap: 20px;
         column-gap: 20px;
-        height: 900px;
+        height:auto;
 
         /* put the elements on rows with 3 elements per row with a space-between them 10px*/
     }
