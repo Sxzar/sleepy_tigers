@@ -1,0 +1,72 @@
+@media screen and (max-width: 1050px) {
+    #aboutContainer {
+        flex-direction: column;
+    }
+    #leftAbout,
+    #rightAbout {
+        width: 100%;
+    }
+    #leftAbout img {
+        height: auto;
+    }
+
+    .flip-card {
+        height: 400px;
+    }
+
+    .footer-container,
+    .menu_bar ul li a {
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #locationCards {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .flip-card {
+        height: 200px;
+        margin: 0;
+    }
+    .contact-form {
+        width: 100%;
+        padding: 20px;
+    }
+    .top-index {
+        display: block;
+    }
+    .menu_bar > ul {
+        display: none;
+    }
+    .hero-text h1 {
+        font-size: 30px;
+    }
+    .search-form {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .top-index {
+        right: 0;
+    }
+    .hero-text {
+        padding: 20px;
+    }
+    .row-split {
+        flex-direction: column !important;
+    }
+    .questions-wrapper {
+        flex-direction: column !important;
+        padding: 20px;
+    }
+    .questions-wrapper .question {
+        width: 100%;
+        padding: 20px;
+    }
+    .section-title {
+        font-size: 20px;
+        padding: 20px;
+    }
+}
