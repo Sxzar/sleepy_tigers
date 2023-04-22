@@ -7,8 +7,46 @@
     scroll-behavior: smooth;
 }
 
-/*---------------------------------------Logo ---------------------------------------*/
+.hidden {
+    display: none;
+}
 
+.fontawesome-content {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+/* Fade in animation */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*---------------------------------------Logo ---------------------------------------*/
+.section-title {
+    font-size: 30px;
+}
+.menu_bar ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu_bar ul li a i {
+    padding-left: 5px;
+    margin: 0;
+}
 .logo a {
     position: relative;
     bottom: 5px;
@@ -29,6 +67,63 @@
     color: #0000ff;
 }
 /*---------------------------------------Navbar elements ---------------------------------------*/
+
+/* Toggle navbar */
+.top-nav--icon::before {
+    font-size: 2em;
+    content: "\f0c9";
+    color: #fff;
+}
+
+/* The ~ selector targets the next .top-nav element  */
+
+#nav-toggle:checked ~ .top-nav {
+    display: block !important;
+    -webkit-animation: fadeIn 2s;
+    animation: fadeIn 2s;
+}
+
+#nav-toggle:checked ~ .top-nav--icon::before {
+    content: "\f00d";
+}
+
+/* Navbar */
+.top-index {
+    display: none;
+    position: absolute;
+    top: -30px;
+    right: 50px;
+}
+.top-nav--icon {
+    display: block;
+    margin: 50px 50px 0 50px;
+    text-align: right;
+}
+
+.top-nav ul {
+    list-style: none;
+    max-width: 25vw;
+    flex-direction: column;
+}
+
+.top-nav {
+    padding: 20px;
+    background: black;
+}
+
+.top-nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.top-nav ul li a:hover {
+    color: #ffffff80;
+}
+
 .menu_bar {
     background-color: rgb(0, 0, 0);
     height: 80px;
