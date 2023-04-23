@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="./css/faq.css" />
         <link rel="stylesheet" href="./css/about.css" />
         <link rel="stylesheet" href="./css/contact.css" />
+        <link rel="stylesheet" href="./css/responsive.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -35,9 +36,7 @@
                     <li><a href="index.html#about">About</a></li>
 
                     <li>
-                        <a href="index.html#biomes"
-                            >Ecosystems <i class="fas fa-caret-down"></i>
-                        </a>
+                        <a>Ecosystems <i class="fas fa-caret-down"></i> </a>
                         <div class="dropdown__menu">
                             <ul>
                                 <li>
@@ -72,6 +71,63 @@
                     <li><a href="index.html#faq">FAQ</a></li>
                     <li><a href="index.html#contact">Contact</a></li>
                 </ul>
+                <div class="top-index">
+                    <!--
+                        The checkbox is hidden, but still accessible to screen readers. 
+                        In CSS we use the :checked selector to verify if the menu is toggled or not.
+                        We also use the ~ selector to make the sibling <nav> element visible.
+                        The ~ is also used to target the <label> sibling and change the content it displays
+                           using the 'content' property followed by a representative fontawesome unicode character .
+                       -->
+                    <input
+                        class="hidden"
+                        type="checkbox"
+                        id="nav-toggle"
+                        name="nav-toggle"
+                    />
+                    <label
+                        for="nav-toggle"
+                        class="fontawesome-content top-nav--icon"
+                    ></label>
+
+                    <!-- The top nav bar is initially hidden -->
+                    <nav class="top-nav hidden">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html#about">About</a></li>
+                            <li><a href="index.html#about">Ecosystems</a></li>
+                            <ul class="separator">
+                                <li>
+                                    <a href="forest.html" target="_blank"
+                                        >Forest</a
+                                    >
+                                    <li>
+                                        <a href="aquatic.html" target="_blank"
+                                            >Aquatic</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="desert.html" target="_blank"
+                                            >Desert</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="tundra.html" target="_blank"
+                                            >Tundra</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="grassland.html" target="_blank"
+                                            >Grassland</a
+                                        >
+                                    </li>
+                                </li>
+                            </ul>
+                            <li><a href="index.html#faq">FAQ</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
         <div class="hero-image">
@@ -98,7 +154,7 @@
         </div>
 
         <div id="about" class="about-section">
-            <h2 class="bigTitle">ABOUT BIOMES</h2>
+            <h2 class="bigTitle section-title">ABOUT BIOMES</h2>
             <div id="aboutContainer">
                 <div id="leftAbout">
                     <img
@@ -167,7 +223,9 @@
                     </div>
                 </div>
             </div>
-            <h2 id="biomes" class="bigTitle">EXPLORE THE BIOMES</h2>
+            <h2 id="biomes" class="bigTitle section-title">
+                EXPLORE THE BIOMES
+            </h2>
             <!-- Card1-->
             <div id="locationCards">
                 <a href="forest.html">
@@ -358,66 +416,91 @@
         </div>
 
         <div id="faq" class="faq-section">
-            <img class="wave-top" src="./assets/img/wave-top.svg" alt="" />
+            <div class="custom-shape-divider-top-1682173114">
+                <svg
+                    data-name="Layer 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1200 120"
+                    preserveAspectRatio="none"
+                >
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"
+                    ></path>
+                </svg>
+            </div>
             <div class="faq-container">
-                <h2 class="faq-title">FAQ'S</h2>
                 <div class="question-container">
-                    <div class="question">
-                        <h4>Question 1</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Debitis molestiae dignissimos assumenda sit,
-                            aliquid, harum tempora fugiat obcaecati voluptatem
-                            vero commodi reprehenderit neque pariatur nesciunt
-                            sunt eveniet voluptatum nemo doloremque.Lorem ipsum
-                            dolor sit amet consectetur adipisicing elit. Debitis
-                            molestiae dignissimos assumenda sit, aliquid, harum
-                            tempora fugiat obcaecati voluptatem vero commodi
-                            reprehenderit neque pariatur nesciunt sunt eveniet
-                            voluptatum nemo doloremque.
-                        </p>
-                    </div>
-                    <div class="question">
-                        <h4>Question 2</h4>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Totam earum tempora inventore itaque nesciunt
-                            sint excepturi quia, dignissimos veritatis dicta
-                            pariatur tenetur! Quas tempore vero soluta nostrum
-                            veniam accusamus quisquam?Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Debitis molestiae
-                            dignissimos assumenda sit, aliquid, harum tempora
-                            fugiat obcaecati voluptatem vero commodi
-                            reprehenderit neque pariatur nesciunt sunt eveniet
-                            voluptatum nemo doloremque.
-                        </p>
-                    </div>
-                    <div class="question">
-                        <h4>Question 3</h4>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Nihil voluptas aliquam tenetur blanditiis
-                            molestiae eum, aspernatur perspiciatis aut quos,
-                            inventore ratione earum sed laborum optio eius
-                            repudiandae, recusandae voluptates accusamus.Lorem
-                            ipsum dolor sit amet consectetur adipisicing elit.
-                            Debitis molestiae dignissimos assumenda sit,
-                            aliquid, harum tempora fugiat obcaecati voluptatem
-                            vero commodi reprehenderit neque pariatur nesciunt
-                            sunt eveniet voluptatum nemo doloremque.
-                        </p>
+                    <h2 class="faq-title section-title">FAQ'S</h2>
+                    <div class="questions-wrapper">
+                        <div class="question">
+                            <h4>Question 1</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Debitis molestiae dignissimos
+                                assumenda sit, aliquid, harum tempora fugiat
+                                obcaecati voluptatem vero commodi reprehenderit
+                                neque pariatur nesciunt sunt eveniet voluptatum
+                                nemo doloremque.Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Debitis molestiae
+                                dignissimos assumenda sit, aliquid, harum
+                                tempora fugiat obcaecati voluptatem vero commodi
+                                reprehenderit neque pariatur nesciunt sunt
+                                eveniet voluptatum nemo doloremque.
+                            </p>
+                        </div>
+                        <div class="question">
+                            <h4>Question 2</h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Totam earum tempora inventore
+                                itaque nesciunt sint excepturi quia, dignissimos
+                                veritatis dicta pariatur tenetur! Quas tempore
+                                vero soluta nostrum veniam accusamus
+                                quisquam?Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Debitis molestiae dignissimos
+                                assumenda sit, aliquid, harum tempora fugiat
+                                obcaecati voluptatem vero commodi reprehenderit
+                                neque pariatur nesciunt sunt eveniet voluptatum
+                                nemo doloremque.
+                            </p>
+                        </div>
+                        <div class="question">
+                            <h4>Question 3</h4>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Nihil voluptas aliquam tenetur
+                                blanditiis molestiae eum, aspernatur
+                                perspiciatis aut quos, inventore ratione earum
+                                sed laborum optio eius repudiandae, recusandae
+                                voluptates accusamus.Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Debitis molestiae
+                                dignissimos assumenda sit, aliquid, harum
+                                tempora fugiat obcaecati voluptatem vero commodi
+                                reprehenderit neque pariatur nesciunt sunt
+                                eveniet voluptatum nemo doloremque.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <img
-                class="wave-bottom"
-                src="./assets/img/wave-bottom.svg"
-                alt=""
-            />
+            <div class="custom-shape-divider-bottom-1682173060">
+                <svg
+                    data-name="Layer 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1200 120"
+                    preserveAspectRatio="none"
+                >
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"
+                    ></path>
+                </svg>
+            </div>
         </div>
 
         <div id="contact" class="contact-section">
-            <h2 class="bigTitle">Contact</h2>
+            <h2 class="bigTitle section-title">Contact</h2>
             <!-- A form with fiels: name, email and message -->
             <form class="contact-form" action="">
                 <div class="fields">
